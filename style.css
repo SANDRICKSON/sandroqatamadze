@@ -751,6 +751,11 @@ input[type="submit"] {
     font-weight: bold;
     border-right: 2px solid var(--main-color);
     white-space: nowrap;
+    position: absolute;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
     overflow: hidden;
     padding-right: 5px;
 }
