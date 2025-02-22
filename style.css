@@ -911,3 +911,77 @@ input[type="submit"] {
     transform: scale(1.1);
     box-shadow: 0 0 25px var(--main-color);
 }
+
+
+.blog {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.blog p {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-bottom: 2.5rem;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--main-color);
+    max-width: 400px;
+    transition: 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.blog-card h3 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    text-shadow: 0 0 5px var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.blog-card p {
+    font-size: 1.6rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.blog-card .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background: var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.blog-card .btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px var(--main-color);
+}
