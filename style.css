@@ -753,16 +753,13 @@ input[type="submit"] {
     display: inline-block;
     font-family: monospace;
     font-weight: bold;
-    
-    white-space: nowrap;
-    position: absolute;
     position: absolute;
     width: calc(100% + 8px);
-    
-    
+    height: 100%;
     overflow: hidden;
-    
+    padding-right: 5px;
 }
+
 
 @keyframes blink {
     50% {
