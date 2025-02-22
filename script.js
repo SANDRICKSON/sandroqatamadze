@@ -33,3 +33,47 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle("bx-x");
     navbar.classList.toggle("active");
 };
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const texts = [
+        "Full-Stack Developer",
+        "Mobile Developer",
+        "Narrative Designer",
+        "UX/UI Designer",
+        "Game Developer"
+    ];
+
+    let index = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 100;
+    const erasingSpeed = 50;
+    const delayBetweenTexts = 1000;
+
+    const typingElement = document.getElementById("typing");
+
+    function typeEffect() {
+        const currentText = texts[index];
+
+        if (isDeleting) {
+            charIndex--;
+        } else {
+            charIndex++;
+        }
+
+        typingElement.textContent = currentText.substring(0, charIndex);
+
+        if (!isDeleting && charIndex === currentText.length) {
+            setTimeout(() => isDeleting = true, delayBetweenTexts);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            index = (index + 1) % texts.length;
+        }
+
+        setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+    }
+
+    setTimeout(typeEffect, 500);
+});
