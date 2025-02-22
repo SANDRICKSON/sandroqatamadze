@@ -760,7 +760,7 @@ input[type="submit"] {
     display: inline-block;
     font-family: monospace;
     font-weight: bold;
-    position: absolute;
+    position: relative;
     width: calc(100% + 8px);
     height: 100%;
     overflow: hidden;
