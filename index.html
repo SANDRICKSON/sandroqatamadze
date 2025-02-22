@@ -18,6 +18,8 @@
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
             <a href="#services">Services</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -159,8 +161,43 @@
             </div>
         </div>
     </section>
-    
-
+    <section class="certifications" id="certifications">
+        <h2 class="heading">Certifications</h2>
+        <ul>
+            <li>IT Beginner's Course
+                <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/476906720_122201228942223303_5463079530856745783_n.jpg?stp=c301.0.1447.1447a_dst-jpg_s206x206_tt6&_nc_cat=109&ccb=1-7&_nc_sid=714c7a&_nc_ohc=f4-n6pTOLYwQ7kNvgF2nxaU&_nc_oc=Adjdpmsja8wpZE6SsLxVjM5Aeh9L7CbpR21A4MkyhmpWO1oV9iDpjplalAyX2lu23qg&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&_nc_gid=AY80KGF3k9IRE-h8dpsucQ0&oh=00_AYAGExa7IR3T5t5HPmaOFBTBlb0z7pLdxe5UfQ1fHbQvEw&oe=67BFDA01" alt="IT Course">
+            </li>
+            <li>Geolab Mobile Development - 2025
+                <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/477561243_122201230550223303_8790041776193303699_n.jpg?stp=c300.0.1448.1448a_dst-jpg_s206x206_tt6&_nc_cat=100&ccb=1-7&_nc_sid=714c7a&_nc_ohc=jyxVGKehPaIQ7kNvgHHQLKZ&_nc_oc=AdhIRW2ZGblff_poCv91CBLSnM_RYaNVcuslpN7RqT-MBuKIlRNGnq5M8VPq1xxYeEw&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&_nc_gid=AY80KGF3k9IRE-h8dpsucQ0&oh=00_AYCwZySNZpaCJ_LVyoBqVhLUapmbM0CMzatujund8x3DTA&oe=67BFF37D" alt="Mobile Certificate">
+            </li>
+            <li>Civic Education Hackathon
+            <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/480791760_122203804112223303_7691706621539015892_n.jpg?stp=c294.0.1460.1460a_dst-jpg_s206x206_tt6&_nc_cat=106&ccb=1-7&_nc_sid=50ad20&_nc_ohc=k9qSE7WTFxAQ7kNvgEiEp3L&_nc_oc=AdgrhKM3QQmeMvleJ7H-XFPojA-gizM_dfNETtiP15uNFBtBftE1WzCZXMbw-GTb8fk&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&_nc_gid=A2gZCOL2u6ux765f5JS7E9x&oh=00_AYBXn1XekxMs-yw2MjLNCBP6mJMp3alEV1jc1MfmFVNBLg&oe=67BFE37D" alt="Hackathon">
+            </li>
+        </ul>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Flutter</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Wordpress</li>
+            <li>App Inventor</li>
+            <li>Django</li>
+            <li>C# & Game Development</li>
+            <li>Fix any IT issues</li>
+            <li>Basics of Figma</li>
+            <li>Scratch</li>
+            <li>Working with any API</li>
+            <li>Rasa</li>
+            <li>Java</li>
+            <li>Arduino</li>
+        </ul>
+    </section>
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
@@ -181,7 +218,6 @@
             </div>
         </form>
     </section>
-
     <footer class="footer">
         <div class="social">
             <a href="https://www.facebook.com/profile.php?id=61556699115785"><box-icon type="logo" name="facebook"></box-icon></a>
@@ -197,4 +233,84 @@
 
     <script src="script.js"></script>
 </body>
+<style>
+    .contact {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.contact .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.contact .input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 1.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.6rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    box-shadow: 0 0 20px var(--main-color);
+    transform: scale(1.02);
+}
+
+.contact textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact input[type="submit"] {
+    background: var(--main-color);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.contact input[type="submit"]:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px var(--main-color);
+}
+
+</style>
 </html>
