@@ -985,3 +985,36 @@ input[type="submit"] {
     transform: scale(1.1);
     box-shadow: 0 0 25px var(--main-color);
 }
+
+
+
+.about {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 2rem;
+    color: #ddd;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.about p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
