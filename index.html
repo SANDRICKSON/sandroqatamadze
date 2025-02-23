@@ -349,7 +349,39 @@
             </div>
         </form>
     </section>
-
+    <section class="faq" id="faq">
+        <h2 class="heading">Frequently Asked <span>Questions</span></h2>
+    
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What technologies do you work with? <span class="arrow">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>I specialize in Python, Flask, JavaScript, React, Dart, Flutter, AI, and robotics.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">Do you take freelance projects? <span class="arrow">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Yes! I am available for freelance projects. You can contact me via email or LinkedIn.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">Can I collaborate with you? <span class="arrow">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Of course! I love collaborating on exciting projects. Feel free to reach out.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">What is your experience in AI development? <span class="arrow">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>I have experience in AI-powered chatbot development and automation using Python.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="social">
             <a href="https://www.facebook.com/profile.php?id=61556699115785"><box-icon type="logo" name="facebook"></box-icon></a>
@@ -443,5 +475,93 @@
     transform: scale(1.1);
     box-shadow: 0 0 30px var(--main-color);
 }
+
+.faq {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+    box-shadow: 0 0 20px var(--main-color);
+    transform: scale(1.02);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    color: var(--main-color);
+}
+
+.arrow {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    font-size: 1.5rem;
+    color: #ddd;
+    padding: 0 10px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
+
 </style>
+    <script>
+    document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle("active");
+    });
+});
+
+</script>
 </html>
