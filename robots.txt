@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sandroqatamadze.onrender.com/sitemap.xml
