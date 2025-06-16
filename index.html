@@ -1,567 +1,1203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta name="google-site-verification" content="YRlR4vImXEj6kOb3c5vN9t625zE84FyCx94p__j0Zx0" />
-    <meta name="description" content="Sandro Qatamadze - Software Developer, Mobile App Developer, Web Developer, AI Engineer. Explore my projects, blog, and certifications.">
-    <meta name="keywords" content="Sandro Qatamadze, web developer, mobile developer, AI, chatbot, Python, Flutter, JavaScript, portfolio">
-    <meta name="author" content="Sandro Qatamadze">
-    <meta property="og:title" content="Portfolio of Sandro Qatamadze">
-    <meta property="og:description" content="Explore my projects, skills, and services as a software developer and AI engineer.">
-    <meta property="og:image" content="https://sandroqatamadze.onrender.com/images/1.png">
-    <meta property="og:url" content="https://sandroqatamadze.onrender.com/">
-
-    <meta name="robots" content="index, follow">
-
+<head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="GqVybDmc2QBQLffQZnuXLpE9K1rfwLdvghNGYmaSPuM"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Sandro Qatamadze",
-  "jobTitle": "Software Developer",
-  "url": "https://sandroqatamadze.onrender.com/",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61556699115785",
-    "https://x.com/Sandro228669",
-    "https://www.instagram.com/s63674505",
-    "https://www.linkedin.com/in/sandro-qatamadze-6b1a9433b",
-
-    "https://www.youtube.com/@SANDRO-QATAMADZE"
-  ]
-}
-</script>
-
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Portfolio of Sandro Qatamadze</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#home">Sandro <span>Qatamadze</span></a>
-        <i class="bx bx-menu" id="menu-icon"></i>
+<header class="header">
+    <div class="header-left">
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#projects">My Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <a href="#home" class="logo">Sandro <span>Qatamadze</span></a>
+    </div>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Sandro</span></h1>
-            <h3 class="text-animation">
-                I'm a <span id="typing"></span>
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sint, at laudantium facilis, perspiciatis consectetur, asperiores deserunt odit obcaecati quod blanditiis assumenda et nisi eum! Nostrum dolores debitis repudiandae explicabo!
-            </p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61556699115785" target="_blank"><box-icon type="logo" name="facebook"></box-icon></a>
-                <a href="https://x.com/Sandro228669" target="_blank"><box-icon type="logo" name="twitter"></box-icon></a>
-                <a href="https://www.instagram.com/s63674505/?igsh=Zjl0d3AxbDF6aG8y&utm_source=ig_contact_invite#" target="_blank"><box-icon type="logo" name="instagram"></box-icon></a>
-                <a href="https://www.linkedin.com/in/sandro-qatamadze-6b1a9433b" target="_blank"><box-icon type="logo" name="linkedin"></box-icon></a>
+    <div id="menu-icon">☰</div>
 
-                <a href="https://www.youtube.com/@SANDRO-QATAMADZE" target="_blank"><box-icon type="logo" name="youtube"></box-icon></a>
-            </div>
+    <nav class="navbar">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="#home" class="active">Home</a>
 
-            <div class="btn-group">
-                <a href="" class="btn">Hire</a>
-                <a href="#contact" class="btn">contact</a>
-            </div>
-        </div>
-        <div class="home-img">
-            <img src="images/cropped_image.png" alt="Image of Sandro Qatamadze">
-        </div>
-    </section>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">My Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-        <p>Hey there! I'm Sandro Qatamadze—a passionate Fullstack, Mobile, and Arduino Developer, as well as a Narrative Designer. This website is your gateway to exploring my projects and diving deeper into my career journey.
 
-            My adventure in the world of programming began at the age of 13, when curiosity led me to wonder how the websites and mobile apps I used daily were built. My first steps involved creating simple web pages using HTML, CSS, and JavaScript. But I quickly realized that I wanted to push my skills further. That’s when I joined TBC Bank and Geolab, where I honed my expertise in mobile development and frontend technologies. These experiences opened the door to working on exciting projects for TBC Tech School and Geolab.
-            
-            Later, I explored the world of chatbots at Explorium, developing them for my personal website and the AnimaChatbotics platform. This journey greatly expanded my skills and perspectives. Additionally, I enhanced my expertise in cybersecurity and emerging technologies at IliaUni’s Cyber Lab—UniLab.
-            
-            Currently, I'm studying at the Chiatura Multifunctional Center, where I’m diving deep into robotics, IT networks, and artificial intelligence through the GENAIEDU project. In 2024, I took on a major challenge—competing in the European Robotics Championship, a milestone in my journey. Alongside that, I’m also a student at Skillwill’s Neo University, specializing in Python development.
-            
-           </p>
-    </section>
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>Geolab Mobile Development (Dart, Flutter, App Inventor) 2024-2025</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>SkillWill Neo University - Backend Development 2024-</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>Explorium Chatbot Development(Python Chatbot Web Development and Narrative Design) 2024-2025</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>TBC Techschool X Geolab Front End(HTML, CSS)-2025</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>Chiatura Multifunctional Center - Robotic 2024-</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>Chiatura Multifunctional Center - IT Networks & Management 2024-</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>Chiatura Multifunctional Center & GenAIEDU - Artifical Intelligence - 2024-</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <h3>TechWorld with Nana - IT Beginner's Course</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, It's <span>Sandro</span></h1>
+        <h3 class="text-animation">
+            I'm a <span id="typing"></span>
+        </h3>
+        <p>
+            I design and develop websites, mobile apps, and chatbots — quickly, efficiently, and at affordable rates.
+            If you need a digital product that doesn’t just look good but actually works, you’re in the right place.
 
-            
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        </div>
-            </div>
-        </div>
-        
-
-       
-
-        
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Our Services</h2>
-    
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Mobile Development</h4>
-                    <p>Designing and developing innovative mobile applications tailored to your needs.</p>
-                </div>
-            </div>
-    
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Frontend Development</h4>
-                    <p>Building visually stunning and user-friendly websites with modern technologies.</p>
-                </div>
-            </div>
-    
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Backend Development</h4>
-                    <p>Developing robust and scalable server-side solutions, databases, and APIs, while also offering mentorship.</p>
-                </div>
-            </div>
-    
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Chatbot Development</h4>
-                    <p>Creating intelligent AI-powered chatbots for businesses and personalized solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="certifications" id="certifications">
-        <h2 class="heading">Certifications</h2>
-        <ul>
-            <li>IT Beginner's Course
-                <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/476906720_122201228942223303_5463079530856745783_n.jpg?stp=c301.0.1447.1447a_dst-jpg_s206x206_tt6&_nc_cat=109&ccb=1-7&_nc_sid=714c7a&_nc_ohc=f4-n6pTOLYwQ7kNvgF2nxaU&_nc_oc=Adjdpmsja8wpZE6SsLxVjM5Aeh9L7CbpR21A4MkyhmpWO1oV9iDpjplalAyX2lu23qg&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&_nc_gid=AY80KGF3k9IRE-h8dpsucQ0&oh=00_AYAGExa7IR3T5t5HPmaOFBTBlb0z7pLdxe5UfQ1fHbQvEw&oe=67BFDA01" alt="IT Course">
-            </li>
-            <li>Geolab Mobile Development - 2025
-                <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/477561243_122201230550223303_8790041776193303699_n.jpg?stp=c300.0.1448.1448a_dst-jpg_s206x206_tt6&_nc_cat=100&ccb=1-7&_nc_sid=714c7a&_nc_ohc=jyxVGKehPaIQ7kNvgHHQLKZ&_nc_oc=AdhIRW2ZGblff_poCv91CBLSnM_RYaNVcuslpN7RqT-MBuKIlRNGnq5M8VPq1xxYeEw&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&_nc_gid=AY80KGF3k9IRE-h8dpsucQ0&oh=00_AYCwZySNZpaCJ_LVyoBqVhLUapmbM0CMzatujund8x3DTA&oe=67BFF37D" alt="Mobile Certificate">
-            </li>
-            <li>Civic Education Hackathon
-            <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/480791760_122203804112223303_7691706621539015892_n.jpg?stp=c294.0.1460.1460a_dst-jpg_s206x206_tt6&_nc_cat=106&ccb=1-7&_nc_sid=50ad20&_nc_ohc=k9qSE7WTFxAQ7kNvgEiEp3L&_nc_oc=AdgrhKM3QQmeMvleJ7H-XFPojA-gizM_dfNETtiP15uNFBtBftE1WzCZXMbw-GTb8fk&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&_nc_gid=A2gZCOL2u6ux765f5JS7E9x&oh=00_AYBXn1XekxMs-yw2MjLNCBP6mJMp3alEV1jc1MfmFVNBLg&oe=67BFE37D" alt="Hackathon">
-            </li>
-            <li>Completing Java Course
-                <img src="images/sertifikati.jpg" alt="Java">
-                </li>
-            <li>Completing C++ Foundamental Course
-                <img src="images/c++.jpg" alt="C++">
-                </li>
-                <li>Completing WEB development Course
-                    <img src="images/WEB.jpg" alt="WEB Course">
-                    </li>
-                    <li>Completing App Development Course
-                        <img src="images/certificate.jpg" alt="App">
-                        </li>
-                        <li>Java Development Course
-                            <img src="images/SERTO.jpg" alt="App">
-                            </li>
-        </ul>
-    </section>
-    <section class="projects" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
-        <div class="project-container">
-            <div class="project-box">
-                <h4>Vepkhistyaosani(
-                    The Knight in the Panther's Skin
-                )</h4>
-                <p>Website is about Shota Rustaveli's poem.</p>
-                <a href="https://thenewest.onrender.com/" target="_blank">View Website</a>
-            </div>
-            <div class="project-box">
-                <h4>Tourism Website</h4>
-                <p>Website is about city of Chiatura. Chiatura is situated in West Georgia</p>
-                <a href="https://sandrickson.github.io/SANDROTRAVELINCHIATURA/FINAL%20PROJECT/index.html" target="_blank">View Website</a>
-            </div>
-            <div class="project-box">
-                <h4>AI Chatbot</h4>
-                <p>Psychological Bot - Psychobot</p>
-                <a href="https://psychobot-4mkv.onrender.com/" target="_blank">View Website</a>
-            </div>
-            <div class="project-box">
-                <h4>Mobile App</h4>
-                <p>Mobile App - CIVLAB. This app was created for civic education Hackathon 2024. This app is belingual and helps any abilities of people to learn basics of civic education.</p>
-                <a href="https://drive.google.com/file/d/1cUeuNnM-a1v1oAuC2kAubmszUjUEnWT7/view?usp=sharing" target="_blank">Download App</a>
-            </div>
-
-            <div class="project-box">
-                <h4>Mobile App</h4>
-                <p>Mobile App - Storybook. Educational app for Georgian children to learn Georgian</p>
-                <a href="https://drive.google.com/file/d/1cUeuNnM-a1v1oAuC2kAubmszUjUEnWT7/view?usp=sharing" target="_blank">Download App</a>
-            </div>
-            <div class="project-box">
-                <h4>Georgian Psychological Bot - Medea</h4>
-                <p>Medea is Georgian AI psychologist</p>
-                <a href="https://www.animachatbotics.com/chatbot/Chat/4444" target="_blank">Talk with Medea</a>
-            </div>
-
-            <div class="project-box">
-                <h4>Georgian Guide Bot - Eka</h4>
-                <p>Eka is Georgian AI Guide of Chiatura</p>
-                <a href="https://www.animachatbotics.com/chatbot/Chat/4449" target="_blank">Talk with Eka</a>
-            </div>
-        </div>
-    </section>
-    <section class="skills" id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Flask</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Flutter</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Wordpress</li>
-            <li>App Inventor</li>
-            <li>Django</li>
-            <li>C# & Game Development</li>
-            <li>Fix any IT issues</li>
-            <li>Basics of Figma</li>
-            <li>Scratch</li>
-            <li>Working with any API</li>
-            <li>Rasa</li>
-            <li>Java</li>
-            <li>Arduino</li>
-            <li>SQL</li>
-            <li>Basics of Cybersecurity</li>
-        </ul>
-    </section>
-    <section class="blog" id="blog">
-        <h2 class="heading">My <span>Blog</span></h2>
-        <p>Read my latest articles about technologies and programming.</p>
-    
-        <div class="blog-container">
-            <div class="blog-card">
-                <h3>Explore Chiatura & Psychobot</h3>
-                <p>Learn more about my web projects "EXPLORE CHIATURA" and "Psychobot".</p>
-                <a href="https://generation.geolab.edu.ge/?p=1209&fbclid=IwY2xjawIm7ZFleHRuA2FlbQIxMQABHcgQM8Rz04LZo2_FmRoogtmFHMg-k2pNpxGmutIkLPrmJRbXFpxW2cCgUw_aem_IBOo_iSDhUmV_ASuosZNzQ" target="_blank" class="btn">Read More</a>
-            </div>
-    
-            <div class="blog-card">
-                <h3>CivLab - Civic Education App</h3>
-                <p>A civic education platform designed to empower learners.</p>
-                <a href="https://civicstech.ge/project/36/1462?fbclid=IwY2xjawIm7kFleHRuA2FlbQIxMQABHfdgEi24HghBFD5QjR86rn29Nk30gQ9rs2gDOfpUzpo8bfN9_HFftG7gdQ_aem_jJ8_7xbA25V-wQFvYsYozQ" target="_blank" class="btn">Read More</a>
-            </div>
-    
-            <div class="blog-card">
-                <h3>Storybook - Georgian Educational App</h3>
-                <p>A Georgian-language educational app that promotes storytelling and learning.</p>
-                <a href="https://generation.geolab.edu.ge/?p=946&fbclid=IwY2xjawIm7nNleHRuA2FlbQIxMQABHZCpS_UppWIOnXuwUOm-mN-kuYz5zmrPE8eXGCow2VJcorVB0TMV8FlZ-Q_aem_ctUdAnKsbrvSk2ny0g7ssw" target="_blank" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="https://script.google.com/macros/s/AKfycbwMhUi6WsEHgkt9zgAM6AJUJK_x4bbW5IMxcn7gm6LlRV4lAN0HzOqRw4JoBGXXROlavw/exec" 
-      name="submit-to-google-sheet" method="post">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="Name" placeholder="Full Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                </div>
-                <div class="input-box">
-                    <input type="tel" name="Phone" placeholder="Phone Number">
-                </div>
-            </div>
-            <div class="input-group">
-                <textarea name="Message" placeholder="Enter your message" required></textarea>
-                <input type="submit" value="Send message">
-            </div>
-        </form>
-    </section>
-    <section class="faq" id="faq">
-        <h2 class="heading">Frequently Asked <span>Questions</span></h2>
-    
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">What technologies do you work with? <span class="arrow">&#9660;</span></button>
-                <div class="faq-answer">
-                    <p>I specialize in Python, Flask, JavaScript, React, Dart, Flutter, AI, and robotics.</p>
-                </div>
-            </div>
-    
-            <div class="faq-item">
-                <button class="faq-question">Do you take freelance projects? <span class="arrow">&#9660;</span></button>
-                <div class="faq-answer">
-                    <p>Yes! I am available for freelance projects. You can contact me via email or LinkedIn.</p>
-                </div>
-            </div>
-    
-            <div class="faq-item">
-                <button class="faq-question">Can I collaborate with you? <span class="arrow">&#9660;</span></button>
-                <div class="faq-answer">
-                    <p>Of course! I love collaborating on exciting projects. Feel free to reach out.</p>
-                </div>
-            </div>
-    
-            <div class="faq-item">
-                <button class="faq-question">What is your experience in AI development? <span class="arrow">&#9660;</span></button>
-                <div class="faq-answer">
-                    <p>I have experience in AI-powered chatbot development and automation using Python.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=61556699115785"><box-icon type="logo" name="facebook"></box-icon></a>
-            <a href="https://x.com/Sandro228669"><box-icon type="logo" name="twitter"></box-icon></a>
-            <a href="https://www.instagram.com/s63674505/?igsh=Zjl0d3AxbDF6aG8y&utm_source=ig_contact_invite#"><box-icon type="logo" name="instagram"></box-icon></a>
-            <a href="www.linkedin.com/in/sandro-qatamadze-6b1a9433b"><box-icon type="logo" name="linkedin"></box-icon></a>
-            <a href="https://www.youtube.com/@SANDRO-QATAMADZE"><box-icon type="logo" name="youtube"></box-icon></a>
-        </div>
-        <p class="copyright">
-            &copy; Sandro Qatamadze | All Rights Reserved
+            📌 My goal is to turn your idea into a real, working solution — with simplicity and style.
+            Let’s bring your vision to life.
         </p>
-    </footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61556699115785" target="_blank">
+                <box-icon type="logo" name="facebook"></box-icon>
+            </a>
+            <a href="https://x.com/Sandro228669" target="_blank">
+                <box-icon type="logo" name="twitter"></box-icon>
+            </a>
+            <a href="https://www.instagram.com/s63674505/?igsh=Zjl0d3AxbDF6aG8y&utm_source=ig_contact_invite#"
+               target="_blank">
+                <box-icon type="logo" name="instagram"></box-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/sandro-qatamadze-6b1a9433b" target="_blank">
+                <box-icon type="logo" name="linkedin"></box-icon>
+            </a>
+            <a href="https://www.youtube.com/@SANDRO-QATAMADZE" target="_blank">
+                <box-icon type="logo" name="youtube"></box-icon>
+            </a>
+            <a href="https://github.com/SANDRICKSON" target="_blank">
+                <box-icon type="logo" name="github"></box-icon>
+            </a>
 
-    <script src="script.js"></script>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://drive.google.com/file/d/1-0LhcqoSn-3Y46Q6QD4gIPWNR_1qlNsz/view?usp=sharing" class="btn">Try
+                mobile version</a>
+            <a href="/assets/sandroqatamadzeresume.pdf" class="btn" download>Download my resume</a>
+            <a href="#contact" class="btn">contact</a>
+        </div>
+    </div>
+    <div class="home-img">
+        <img id="gallery-image" src="images/cropped_image.png" alt="">
+    </div>
+
+</section>
+
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+    <p>Hey there! I'm Sandro Qatamadze—a passionate Fullstack, Mobile, and Arduino Developer, as well as a Narrative
+        Designer. This website is your gateway to exploring my projects and diving deeper into my career journey.
+
+        My adventure in the world of programming began at the age of 13, when curiosity led me to wonder how the
+        websites and mobile apps I used daily were built. My first steps involved creating simple web pages using HTML,
+        CSS, and JavaScript. But I quickly realized that I wanted to push my skills further. That’s when I joined TBC
+        Bank and Geolab, where I honed my expertise in mobile development and frontend technologies. These experiences
+        opened the door to working on exciting projects for TBC Tech School and Geolab.
+
+        Later, I explored the world of chatbots at Explorium, developing them for my personal website and the
+        AnimaChatbotics platform. This journey greatly expanded my skills and perspectives. Additionally, I enhanced my
+        expertise in cybersecurity and emerging technologies at IliaUni’s Cyber Lab—UniLab.
+
+        Currently, I'm studying at the Chiatura Multifunctional Center, where I’m diving deep into robotics, IT
+        networks, and artificial intelligence through the GENAIEDU project. In 2024, I took on a major
+        challenge—competing in the European Robotics Championship, a milestone in my journey. Alongside that, I’m also a
+        student at Skillwill’s Neo University, specializing in Python development.
+
+    </p>
+</section>
+<section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    <div class="timeline-items">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Geolab Mobile Development (Dart, Flutter, App Inventor) 2024-2025</h3>
+                <p>This course focuses on mobile application development using Dart and Flutter technologies. It also
+                    covers the use of App Inventor for creating interactive applications.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>SkillWill Neo University - Backend Development 2024-</h3>
+                <p>This course is dedicated to backend programming, working with databases, and server architecture.
+                    Participants will learn how to create APIs and build scalable systems.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Explorium Chatbot Development (Python Chatbot Web Development and Narrative Design) 2024-2025</h3>
+                <p>This course covers chatbot development using Python, focusing on web integration and narrative design
+                    for creating engaging AI-powered conversational experiences.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>TBC Techschool X Geolab Front End (HTML, CSS) 2025</h3>
+                <p>A comprehensive course on front-end development covering HTML and CSS fundamentals, best practices,
+                    and modern web design techniques.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Chiatura Multifunctional Center - Robotics 2024-</h3>
+                <p>This program introduces participants to the world of robotics, including hardware programming,
+                    automation, and AI-driven robotic solutions.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Chiatura Multifunctional Center - IT Networks & Management 2024-</h3>
+                <p>A course covering IT networking principles, infrastructure management, and cybersecurity fundamentals
+                    for building and maintaining robust IT systems.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Chiatura Multifunctional Center & GenAIEDU - Artificial Intelligence 2024-</h3>
+                <p>This course explores the fundamentals of artificial intelligence, including machine learning models,
+                    neural networks, and AI-driven applications.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Chiatura Multifunctional Center - Web Development - Java 2025-</h3>
+                <p>A course dedicated to Java-based web development, covering backend frameworks, database integration,
+                    and building scalable web applications.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Chiatura Multifunctional Center - Web Development - Python 2025-</h3>
+                <p>A practical course on web development using Python, covering Django and Flask frameworks, RESTful API
+                    development, and database integration.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Chiatura Multifunctional Center - Android Development - Kotlin 2025-</h3>
+                <p>A specialized course on Android development using Kotlin, focusing on UI/UX design, mobile app
+                    architecture, and Google Play deployment.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>TechWorld with Nana - IT Beginner's Course</h3>
+                <p>An introductory course designed for beginners to learn the basics of IT, covering computer systems,
+                    networking, programming fundamentals, and cybersecurity awareness.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Unilab (Iliauni's cyberlaboratory) - Web Development - Python 2025-</h3>
+                <p>A practical course on web development using Python, covering Django and Flask frameworks, RESTful API
+                    development, and database integration.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Unilab (Iliauni's cyberlaboratory) Front End Development (HTML, CSS, JS) 2025</h3>
+                <p>A comprehensive course on front-end development covering HTML, CSS and JavaScript fundamentals, best
+                    practices, and modern web design techniques.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Unilab (Iliauni's cyberlaboratory) - Sciencific Course - Python 2025</h3>
+                <p>A practical course on data analytics using Python, covering malptolib and many libraries and database
+                    integration.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Unilab (Iliauni's cyberlaboratory) C++ Development 2025</h3>
+                <p>Working with C++ projects</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>TBC TechSchool X Geolab Back-End Development (Python) 2025</h3>
+                <p>I completed a practical course covering Python basics, object-oriented programming, and full-stack
+                    web development using Flask. I built dynamic websites with HTML, CSS, Bootstrap, integrated
+                    databases with SQLAlchemy, and implemented user authentication features.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+                <h3>Coursera - Introduction to AI and Machine Learning on Google Cloud 2025-</h3>
+                <p>Recognize the data-to-AI technologies and tools offered by Google Cloud.
+
+                    Use generative AI capabilities in applications.
+
+                    Choose between different options to develop an AI project on Google Cloud.
+
+                    Build ML models end-to-end by using Vertex AI.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<section class="services" id="services">
+    <h2 class="heading">Our Services</h2>
+
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-info">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h4>Mobile Development</h4>
+                <p>Designing and developing innovative mobile applications tailored to your needs.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <i class="fas fa-code service-icon"></i>
+                <h4>Frontend Development</h4>
+                <p>Building visually stunning and user-friendly websites with modern technologies.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <i class="fas fa-server service-icon"></i>
+                <h4>Backend Development</h4>
+                <p>Developing robust and scalable server-side solutions, databases, and APIs, while also offering
+                    mentorship.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <i class="fas fa-robot service-icon"></i>
+                <h4>Chatbot Development</h4>
+                <p>Creating intelligent AI-powered chatbots for businesses and personalized solutions.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="certifications" id="certifications">
+    <h2 class="heading">Certifications</h2>
+    <ul>
+        <li>Participating in masterclas: Fully Dinamic Pacman Game using JavaScript
+            <img src="images/pacman.jpg" alt="IT Course">
+        </li>
+        <li>Completing Course Promoting User Management on Mobile Applications
+            <img src="images/usermanagement.jpg" alt="IT Course">
+        </li>
+        <li>Completing IT Beginner's Course
+            <img src="images/tbcit.jpg" alt="IT Course">
+        </li>
+        <li>Completing TBC TechSchool X Geolab Mobile Development Course - 2025
+            <img src="images/tbcmobile.jpg" alt="Mobile Certificate">
+        </li>
+        <li>Completing TBC TechSchool X Geolab Front End Development (HTML,CSS) - 2025
+            <img src="images/tbcfront.jpg" alt="Mobile Certificate">
+        </li>
+        <li>Participating in Civic Education Hackathon
+            <img src="images/geolabcivic.jpg" alt="Hackathon">
+        </li>
+        <li>Completing Java Course
+            <img src="images/sertifikati.jpg" alt="Java">
+        </li>
+        <li>Completing C++ Foundamental Course
+            <img src="images/c++.jpg" alt="C++">
+        </li>
+        <li>Completing WEB development Course
+            <img src="images/WEB.jpg" alt="WEB Course">
+        </li>
+        <li>Completing App Development Course
+            <img src="images/certificate.jpg" alt="App">
+        </li>
+        <li>Java Development Course
+            <img src="images/SERTO.jpg" alt="App">
+        </li>
+        <li>Completing GENAIEdu Course
+            <img src="images/AI.png" alt="AI Course">
+        </li>
+
+        <li>Completing Unilab Python Course
+            <img src="images/unilab.png" alt="AI Course">
+        </li>
+        <li>Certification: Introduction to AI and Machine Learning on Google Cloud from United Latino Students
+            Association!
+            <img src="images/coursera.jpg" alt="AI Course">
+        </li>
+        <li>Completing Skillwill Neo University Course - Backend Development - Python - 2025
+            <img src="images/skillwill.jpg" alt="IT Course">
+        </li>
+    </ul>
+</section>
+<section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="project-container">
+
+        <div class="project-box">
+            <h4>Vepkhistyaosani (The Knight in the Panther's Skin)</h4>
+            <p>Website is about Shota Rustaveli's poem.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://thenewest.onrender.com/" target="_blank">View Website</a>
+        </div>
+
+
+        <div class="project-box">
+            <h4>Vepkhistyaosani (The Knight in the Panther's Skin) Mobile App</h4>
+            <p>Mobile App is about Shota Rustaveli's poem.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://drive.google.com/file/d/1-ZZ0HzJLyrsZJmhJ01o_LblqNhI-W-P3/view?usp=sharing"
+               target="_blank">Download App</a>
+        </div>
+        <div class="project-box">
+            <h4>Tourism Website</h4>
+            <p>Website is about city of Chiatura. Chiatura is situated in West Georgia.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://sandrickson.github.io/SANDROTRAVELINCHIATURA/FINAL%20PROJECT/index.html" target="_blank">View
+                Website</a>
+        </div>
+
+        <div class="project-box">
+            <h4>AI Chatbot</h4>
+            <p>Psychological Bot - Psychobot</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://psychobot-4mkv.onrender.com/" target="_blank">View Website</a>
+        </div>
+        <div class="project-box">
+            <h4>Mobile App - CIVLAB</h4>
+            <p>Mobile App created for Civic Education Hackathon 2024. It is bilingual and helps people learn basics of
+                civic education.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://drive.google.com/file/d/1cUeuNnM-a1v1oAuC2kAubmszUjUEnWT7/view?usp=sharing"
+               target="_blank">Download App</a>
+        </div>
+
+        <div class="project-box">
+            <h4>Mobile App - Storybook</h4>
+            <p>Educational app for Georgian children to learn Georgian.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://drive.google.com/file/d/1cUeuNnM-a1v1oAuC2kAubmszUjUEnWT7/view?usp=sharing"
+               target="_blank">Download App</a>
+        </div>
+
+        <div class="project-box">
+            <h4>Georgian Psychological Bot - Medea</h4>
+            <p>Medea is a Georgian AI psychologist.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://www.animachatbotics.com/chatbot/Chat/4444" target="_blank">Talk with Medea</a>
+        </div>
+
+        <div class="project-box">
+            <h4>Georgian Guide Bot - Eka</h4>
+            <p>Eka is a Georgian AI Guide of Chiatura.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://www.animachatbotics.com/chatbot/Chat/4449" target="_blank">Talk with Eka</a>
+        </div>
+
+
+        <div class="project-box">
+            <h4>AI Image Generator</h4>
+            <p>You can generate images for you</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://drive.google.com/file/d/1-YrsVCczQqc4u0XqXSv_L8lSNXDwmXRS/view?usp=sharing"
+               target="_blank">Download</a>
+        </div>
+        <div class="project-box">
+            <h4>Image Converter</h4>
+            <p>Image Converter to PDF</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://imagepdfconverter.onrender.com/" target="_blank">Convert your images to PDF here</a>
+        </div>
+        <div class="project-box">
+            <h4>A Translator App</h4>
+            <p>This is a translator app which translates with 100%</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://drive.google.com/file/d/1GX-hibFHVpl3zkexTYfsGyGcfOUfkTP4/view?usp=sharing"
+               target="_blank">Download App</a>
+        </div>
+
+        <div class="project-box">
+            <h4>AI Chatbot - Sandricksoni</h4>
+            <p>Revolutionizing digital conversations! This AI-driven chatbot understands, learns, and responds
+                naturally—perfect for interactive experiences.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://sandricksonichatbot.onrender.com/" target="_blank">Talk with Bot</a>
+        </div>
+
+
+        <div class="project-box">
+            <h4>AI-Powered Image Creator</h4>
+            <p>Transform your imagination into stunning visuals with AI.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://texttoimage-j8l0.onrender.com" target="_blank" class="btn">Start Creating Now</a>
+        </div>
+
+
+        <div class="project-box">
+            <h4>Weather App using Vue.js</h4>
+            <p>View the weather anywhere. The app is currently in test mode and updates daily.</p>
+            <div class="stars" data-rating="0">
+                ★★★★★
+            </div>
+            <a href="https://vue-weather-app-tsdx.onrender.com" target="_blank" class="btn">View the weather now</a>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul class="skills-list">
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fas fa-fire"></i> Flask</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fab fa-react"></i> React</li>
+        <li><i class="fas fa-mobile-alt"></i> Flutter</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-wordpress"></i> Wordpress</li>
+        <li><i class="fas fa-th-large"></i> App Inventor</li>
+        <li><i class="fas fa-code-branch"></i> Django</li>
+        <li><i class="fas fa-gamepad"></i> C# & Game Development</li>
+        <li><i class="fas fa-tools"></i> Fix any IT issues</li>
+        <li><i class="fab fa-figma"></i> Basics of Figma</li>
+        <li><i class="fas fa-puzzle-piece"></i> Scratch</li>
+        <li><i class="fas fa-plug"></i> Working with any API</li>
+        <li><i class="fas fa-brain"></i> Rasa</li>
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fab fa-linux"></i> Working with Linux</li>
+        <li><i class="fab fa-git-alt"></i> Working with GIT</li>
+        <li><i class="fas fa-microchip"></i> Arduino</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fas fa-shield-alt"></i> Basics of Cybersecurity</li>
+        <li><i class="fas fa-cloud"></i> Cloud</li>
+        <li><i class="fas fa-network-wired"></i> Rest Framework</li>
+        <li><i class="fab fa-android"></i> Kotlin</li>
+        <li><i class="fab fa-docker"></i> Docker</li>
+        <li><i class="fab fa-vuejs"></i> Vue JS</li>
+        <li><i class="fas fa-robot"></i> Vertex AI</li>
+        <li><i class="fab fa-aws"></i> AWS</li>
+        <li><i class="fab fa-microsoft"></i> Azuew</li>
+        <li><i class="fab fa-google"></i> GCP</li>
+    </ul>
+</section>
+
+<section class="blog" id="blog">
+    <h2 class="heading">My <span>Blog</span></h2>
+    <p>Read my latest articles about technologies and programming.</p>
+
+    <div class="blog-container">
+        <div class="blog-card">
+            <h3>Explore Chiatura & Psychobot</h3>
+            <p>Learn more about my web projects "EXPLORE CHIATURA" and "Psychobot".</p>
+            <a href="https://generation.geolab.edu.ge/?p=1209&fbclid=IwY2xjawIm7ZFleHRuA2FlbQIxMQABHcgQM8Rz04LZo2_FmRoogtmFHMg-k2pNpxGmutIkLPrmJRbXFpxW2cCgUw_aem_IBOo_iSDhUmV_ASuosZNzQ"
+               target="_blank" class="btn">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <h3>CivLab - Civic Education App</h3>
+            <p>A civic education platform designed to empower learners.</p>
+            <a href="https://civicstech.ge/project/36/1462?fbclid=IwY2xjawIm7kFleHRuA2FlbQIxMQABHfdgEi24HghBFD5QjR86rn29Nk30gQ9rs2gDOfpUzpo8bfN9_HFftG7gdQ_aem_jJ8_7xbA25V-wQFvYsYozQ"
+               target="_blank" class="btn">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <h3>Storybook - Georgian Educational App</h3>
+            <p>A Georgian-language educational app that promotes storytelling and learning.</p>
+            <a href="https://generation.geolab.edu.ge/?p=946&fbclid=IwY2xjawIm7nNleHRuA2FlbQIxMQABHZCpS_UppWIOnXuwUOm-mN-kuYz5zmrPE8eXGCow2VJcorVB0TMV8FlZ-Q_aem_ctUdAnKsbrvSk2ny0g7ssw"
+               target="_blank" class="btn">Read More</a>
+        </div>
+    </div>
+    </div>
+</section>
+<!--<section id="resources" class="resources">
+    <h2>Educational Resources</h2>
+    <p class="neon-text">I am currently creating educational resources for programming languages. At the moment, these resources are available in Georgian, but English versions will be added soon. These resources consist of lessons hosted on GitHub.</p>
+
+    <ul>
+        <li><a href="https://github.com/SandroQatamadzeLecturer/PYTHON-LECTURES" class="resource-link" target="_blank">Python Lessons on Github From 0 to web development</a></li>
+    </ul>
+</section> -->
+
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="https://script.google.com/macros/s/AKfycbwMhUi6WsEHgkt9zgAM6AJUJK_x4bbW5IMxcn7gm6LlRV4lAN0HzOqRw4JoBGXXROlavw/exec"
+          name="submit-to-google-sheet" method="post">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="Phone" placeholder="Phone Number">
+            </div>
+        </div>
+        <div class="input-group">
+            <textarea name="Message" placeholder="Enter your message" required></textarea>
+            <input type="submit" value="Send message">
+        </div>
+    </form>
+</section>
+
+<div class="newsletter-container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form action="https://formspree.io/f/xpwqewoj" method="POST">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+<!--<section class="resume">
+<div class="resume-container">
+    <img src="images/resume.png" alt="Download CV QR Code" class="resume-qr">
+    <p class="resume-text">Scan the QR code to download my CV.</p>
+</div>
+</section>-->
+<section class="faq" id="faq">
+    <h2 class="heading">Frequently Asked <span>Questions</span></h2>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">What technologies do you work with? <span class="arrow">&#9660;</span></button>
+            <div class="faq-answer">
+                <p>I specialize in Python, Flask, JavaScript, React, Dart, Flutter, AI, and robotics.See all my skills
+                    <a href="#skills">here</a></p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you take freelance projects? <span class="arrow">&#9660;</span></button>
+            <div class="faq-answer">
+                <p>Yes! I am available for freelance projects. You can contact me via email or LinkedIn.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I collaborate with you? <span class="arrow">&#9660;</span></button>
+            <div class="faq-answer">
+                <p>Of course! I love collaborating on exciting projects. Feel free to reach out.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What is your experience in AI development? <span class="arrow">&#9660;</span>
+            </button>
+            <div class="faq-answer">
+                <p>I have experience in AI-powered chatbot development and automation using Python.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61556699115785" target="_blank">
+            <box-icon type="logo" name="facebook"></box-icon>
+        </a>
+        <a href="https://x.com/Sandro228669" target="_blank">
+            <box-icon type="logo" name="twitter"></box-icon>
+        </a>
+        <a href="https://www.instagram.com/s63674505/?igsh=Zjl0d3AxbDF6aG8y&utm_source=ig_contact_invite#"
+           target="_blank">
+            <box-icon type="logo" name="instagram"></box-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/sandro-qatamadze-6b1a9433b" target="_blank">
+            <box-icon type="logo" name="linkedin"></box-icon>
+        </a>
+        <a href="https://www.youtube.com/@SANDRO-QATAMADZE" target="_blank">
+            <box-icon type="logo" name="youtube"></box-icon>
+        </a>
+        <a href="https://github.com/SANDRICKSON" target="_blank">
+            <box-icon type="logo" name="github"></box-icon>
+        </a>
+    </div>
+    <p class="copyright">
+        &copy; Sandro Qatamadze | All Rights Reserved
+    </p>
+    <p>
+    <p>
+        <a href="https://sandroqatamadzegeo.onrender.com">
+            <img src="images/geo.jpg" alt="Geo"
+                 style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #ccc;">
+        </a>
+    </p>
+
+
+</footer>
+
+
+<script src="script.js"></script>
 </body>
+
 <style>
+    /* .neon-text {
+     color: #fff;
+     font-size: 24px;
+     text-align: center;
+     text-shadow: 0 0 5px var(--main-color), 0 0 10px var(--main-color), 0 0 15px var(--main-color);
+     font-weight: bold;
+     margin: 20px 0;
+ }
+
+ .resources {
+     padding: 40px;
+     border-radius: 15px;
+     box-shadow: 0 0 20px var(--main-color);
+     text-align: center;
+     margin-top: 40px;
+ }
+
+ .resources h2 {
+     color: #fff;
+     font-size: 28px;
+     margin-bottom: 20px;
+     text-shadow: 0 0 10px var(--main-color);
+ }
+
+ .resources ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
+ .resources li {
+     margin: 10px 0;
+ }
+
+ .resource-link {
+     color: var(--main-color);
+     font-size: 20px;
+     text-decoration: none;
+     padding: 8px 15px;
+     border-radius: 5px;
+     border: 2px solid var(--main-color);
+     transition: all 0.3s ease;
+     text-shadow: 0 0 5px var(--main-color);
+ }
+
+ .resource-link:hover {
+     background-color: var(--main-color);
+     color: #fff;
+     transform: scale(1.1);
+     box-shadow: 0 0 15px var(--main-color);
+ } */
+
+
+    .resume-container {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px var(--main-color);
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .resume-qr {
+        width: 200px;
+        height: auto;
+        border: 5px solid var(--main-color);
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--main-color);
+        transition: 0.3s ease-in-out;
+    }
+
+    .resume-qr:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px var(--main-color);
+    }
+
+    .resume-text {
+        color: #fff;
+        font-size: 16px;
+        margin-top: 10px;
+        text-shadow: 0 0 5px var(--main-color);
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 1rem;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px 0;
+        border-top: 2px solid var(--main-color);
+        box-shadow: 0 0 10px var(--main-color);
+        text-shadow: 0 0 5px var(--main-color);
+        font-weight: bold;
+    }
+
+    .stars {
+        font-size: 24px;
+        cursor: pointer;
+        color: white; /* Default color - white */
+        user-select: none;
+    }
+
+    .stars.active {
+        color: gold; /* Selected stars turn gold */
+    }
+
+
     .contact {
-    background: var(--second-bg-color);
-    padding: 100px 15px;
-    text-align: center;
-}
+        background: var(--second-bg-color);
+        padding: 100px 15px;
+        text-align: center;
+    }
 
-.contact h2 {
-    font-size: 8rem;
-    color: var(--main-color);
-    text-shadow: 0 0 10px var(--main-color);
-    margin-bottom: 3rem;
-}
+    .contact h2 {
+        font-size: 8rem;
+        color: var(--main-color);
+        text-shadow: 0 0 10px var(--main-color);
+        margin-bottom: 3rem;
+    }
 
-.contact form {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    box-shadow: 0 0 20px var(--main-color);
-    border: 2px solid var(--main-color);
-}
+    .contact form {
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        box-shadow: 0 0 20px var(--main-color);
+        border: 2px solid var(--main-color);
+    }
 
-.contact .input-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-}
+    .contact .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
 
-.contact .input-box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+    .contact .input-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 1.5rem;
-    background: transparent;
-    border: 2px solid var(--main-color);
-    border-radius: 10px;
-    color: white;
-    font-size: 1.6rem;
-    outline: none;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 10px var(--main-color);
-}
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        padding: 1.5rem;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        border-radius: 10px;
+        color: white;
+        font-size: 1.6rem;
+        outline: none;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 0 10px var(--main-color);
+    }
 
-.contact input:focus,
-.contact textarea:focus {
-    box-shadow: 0 0 20px var(--main-color);
-    transform: scale(1.02);
-}
+    .contact input:focus,
+    .contact textarea:focus {
+        box-shadow: 0 0 20px var(--main-color);
+        transform: scale(1.02);
+    }
 
-.contact textarea {
-    height: 200px;
-    resize: none;
-}
+    .contact textarea {
+        height: 200px;
+        resize: none;
+    }
 
-.contact input[type="submit"] {
-    background: var(--main-color);
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 20px var(--main-color);
-}
+    .contact input[type="submit"] {
+        background: var(--main-color);
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 0 20px var(--main-color);
+    }
 
-.contact input[type="submit"]:hover {
-    background: white;
-    color: black;
-    transform: scale(1.1);
-    box-shadow: 0 0 30px var(--main-color);
-}
+    .contact input[type="submit"]:hover {
+        background: white;
+        color: black;
+        transform: scale(1.1);
+        box-shadow: 0 0 30px var(--main-color);
+    }
 
-.faq {
-    background: var(--second-bg-color);
-    padding: 100px 15px;
-    text-align: center;
-}
+    .faq {
+        background: var(--second-bg-color);
+        padding: 100px 15px;
+        text-align: center;
+    }
 
-.faq h2 {
-    font-size: 8rem;
-    color: var(--main-color);
-    text-shadow: 0 0 10px var(--main-color);
-    margin-bottom: 2rem;
-}
+    .faq h2 {
+        font-size: 8rem;
+        color: var(--main-color);
+        text-shadow: 0 0 10px var(--main-color);
+        margin-bottom: 2rem;
+    }
 
-.faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
+    .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+    }
 
-.faq-item {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--main-color);
-    transition: 0.3s ease-in-out;
-}
+    .faq-item {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--main-color);
+        transition: 0.3s ease-in-out;
+    }
 
-.faq-item:hover {
-    box-shadow: 0 0 20px var(--main-color);
-    transform: scale(1.02);
-}
+    .faq-item:hover {
+        box-shadow: 0 0 20px var(--main-color);
+        transform: scale(1.02);
+    }
 
-.faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.3s;
-}
+    .faq-question {
+        width: 100%;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: left;
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+    }
 
-.faq-question:hover {
-    color: var(--main-color);
-}
+    .faq-question:hover {
+        color: var(--main-color);
+    }
 
-.arrow {
-    font-size: 1.5rem;
-    transition: 0.3s;
-}
+    .arrow {
+        font-size: 1.5rem;
+        transition: 0.3s;
+    }
 
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-    font-size: 1.5rem;
-    color: #ddd;
-    padding: 0 10px;
-}
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        font-size: 1.5rem;
+        color: #ddd;
+        padding: 0 10px;
+    }
 
-.faq-item.active .faq-answer {
-    max-height: 200px;
-    opacity: 1;
-    padding-top: 10px;
-}
+    .faq-item.active .faq-answer {
+        max-height: 200px;
+        opacity: 1;
+        padding-top: 10px;
+    }
 
-.faq-item.active .arrow {
-    transform: rotate(180deg);
-}
+    .faq-item.active .arrow {
+        transform: rotate(180deg);
+    }
 
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10%;
+        z-index: 1000;
+        border-bottom: 2px solid var(--main-color);
+        box-shadow: 0 0 15px var(--main-color);
+    }
+
+    .header a {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .header a:hover {
+        color: var(--main-color);
+        text-shadow: 0 0 10px var(--main-color);
+    }
+
+    .header span {
+        color: var(--main-color);
+    }
+
+    #menu-icon {
+        font-size: 3rem;
+        color: var(--main-color);
+        display: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+        color: #ddd;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: var(--main-color);
+        text-shadow: 0 0 10px var(--main-color);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    #menu-icon {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        #menu-icon {
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
+            background: black;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(255, 255, 255, 0.2);
+        }
+
+        .navbar.active {
+            display: flex;
+        }
+    }
+
+
+    .newsletter-container {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 20px var(--main-color);
+        border: 2px solid var(--main-color);
+        max-width: 500px;
+        margin: 50px auto;
+    }
+
+    .newsletter-container h2 {
+        font-size: 2rem;
+        color: #fff;
+        text-shadow: 0 0 10px var(--main-color);
+    }
+
+    .newsletter-container form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .newsletter-container label {
+        font-size: 1.2rem;
+        color: #ccc;
+    }
+
+    .newsletter-container input {
+        width: 80%;
+        padding: 12px;
+        font-size: 1rem;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+        border: 2px solid var(--main-color);
+        border-radius: 5px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .newsletter-container input::placeholder {
+        color: #888;
+    }
+
+    .newsletter-container input:focus {
+        border-color: #fff;
+        box-shadow: 0 0 10px var(--main-color);
+    }
+
+    .newsletter-container button {
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: black;
+        background: var(--main-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 0 10px var(--main-color);
+    }
+
+    .newsletter-container button:hover {
+        background: #fff;
+        color: black;
+        box-shadow: 0 0 20px var(--main-color);
+    }
+
+
+    @media (max-width: 768px) {
+        .services-container {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
-    <script>
+<script>
     document.querySelectorAll(".faq-question").forEach(button => {
-    button.addEventListener("click", () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle("active");
+        button.addEventListener("click", () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle("active");
+        });
     });
-});
+    const menuIcon = document.querySelector("#menu-icon");
+    const navbar = document.querySelector(".navbar");
+    menuIcon.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
 
+
+    document.querySelectorAll(".stars").forEach(starContainer => {
+        const stars = starContainer.textContent.trim().split('');
+        starContainer.innerHTML = '';
+
+        stars.forEach((star, index) => {
+            const starElement = document.createElement("span");
+            starElement.innerHTML = "★";
+            starElement.dataset.index = index;
+            starElement.classList.add("star");
+            starContainer.appendChild(starElement);
+        });
+
+        starContainer.addEventListener("click", function (e) {
+            if (e.target.classList.contains("star")) {
+                let rating = parseInt(e.target.dataset.index) + 1;
+                starContainer.dataset.rating = rating;
+                updateStars(starContainer, rating);
+            }
+        });
+
+        function updateStars(container, rating) {
+            const starElements = container.querySelectorAll(".star");
+            starElements.forEach((star, index) => {
+                if (index < rating) {
+                    star.style.color = "gold";
+                } else {
+                    star.style.color = "white";
+                }
+            });
+        }
+    });
+
+
+    document.getElementById("newsletter-form").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message");
+
+        let response = await fetch("https://formspree.io/f/xpwqewoj", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({email: email})
+        });
+
+        if (response.ok) {
+            message.textContent = "✅ Subscription successful!";
+            message.style.color = "green";
+        } else {
+            message.textContent = "❌ Error! Please try again.";
+            message.style.color = "red";
+        }
+    });
 </script>
 </html>
