@@ -1,0 +1,1334 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' sans-serif;
+}
+
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#131313;
+    --text-color:white;
+    --main-color:#00ffee;
+}
+
+html{
+    font-size: 60%;
+    overflow-x:hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%; /* მარცხნივ ცოტა ნაკლები padding */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; /* ღილაკსა და Sandro-ს შორის დაშორება */
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* მობილურზე მორგება */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 3%;
+    }
+
+    .header-left {
+        gap: 0.8rem;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .theme-toggle {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+.navbar a{
+    font-size: 1.8rem;
+    color:var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+#menu-icon {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+
+
+section{
+    min-height:100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+
+.home-img {
+    position: relative;
+    top: 3rem;
+    width: 700px;
+    max-width: 90vw;  /* მაქსიმუმი 90% viewport-სგან */
+    height: auto;     /* სიმაღლე ავტომატურად შეფარდება */
+    aspect-ratio: 1 / 1; /* წრის ფორმისთვის კვადრატული შეფარდება */
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--main-color);
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+    margin: auto;
+    transition:
+            background-color 0.4s ease,
+            box-shadow 0.4s ease,
+            transform 0.4s ease,
+            filter 0.4s ease;
+}
+
+.home-img:hover {
+    background-color: #111;
+    box-shadow:
+            0 0 30px var(--main-color),
+            0 0 60px var(--main-color),
+            0 0 120px var(--main-color);
+    transform: scale(1.05) rotateZ(1deg);
+    filter: brightness(1.1);
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition:
+            box-shadow 0.4s ease,
+            transform 0.4s ease;
+}
+
+.home-img img:hover {
+    box-shadow:
+            0 0 25px var(--main-color),
+            0 0 50px var(--main-color),
+            0 0 100px var(--main-color);
+    transform: scale(1.05);
+}
+
+/* მცირე ეკრანებისთვის (მობილური, ტაბლეტი) */
+@media (max-width: 768px) {
+    .home-img {
+        top: 2rem;
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-img {
+        top: 1.5rem;
+        max-width: 70vw;
+    }
+}
+
+
+
+
+
+
+/* გლუვი გადასვლის ანიმაცია */
+#gallery-image {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+#gallery-image.fade-out {
+    opacity: 0;
+}
+
+#gallery-image.fade-in {
+    opacity: 1;
+}
+
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+
+.social-icons a:hover{
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4.5rem;
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s, ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0 50px var(--main-color);
+}
+
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-group a:nth-of-type(2){
+    background-color: black;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 0 25px transparent;
+}
+
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    color: black;
+}
+
+
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px
+}
+
+.text-animation span{
+    position: relative;
+}
+
+
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.education {
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+}
+
+.education h2 {
+    margin-bottom: 5rem;
+}
+
+.timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow:
+            0 0 25px var(--main-color),
+            0 0 25px var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    top:10px;
+}
+
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+.timeline-content {
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 25px var(--main-color);
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 0 10px;
+}
+
+.timeline-content p {
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--main-color);
+    width: 50px;
+}
+
+
+.services {
+    background: var(--bg-color);
+    color: black;
+    padding: 5rem 2rem;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* შენარჩუნებულია 2x2 */
+    gap: 2.5rem;
+    padding: 0 2rem;
+}
+
+.service-box {
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+.service-box:hover {
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+}
+
+.service-box .service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem;
+    height: 100%;
+}
+
+.service-info h4 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: inherit;
+}
+
+.service-info p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: inherit;
+    line-height: 1.6;
+}
+
+
+
+.testimonials{
+    background:var(--bg-color);
+}
+
+.testimonials-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonials .heading{
+    margin-bottom: 5rem;
+}
+
+.testimonials-box img{
+    width: 50px;
+    border-radius: 50%;
+    border:3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.wrapper{
+    display: flex;
+    grid-template-columns: repeat(1.3fr);
+    gap: 3rem;
+}
+
+
+.testimonial-item{
+    min-height: 550px;
+    max-width: 450px;
+    background-color: black;
+    border: 3px solid rgba(238,238,238,0.2);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4 ease-in-out;
+}
+
+.testimonial-item:hover{
+    border:3px solid var(--main-color);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.testimonial-item h2{
+    font-size: 2.8rem;
+}
+
+
+.rating .filled {
+    color: gold;
+}
+
+
+
+
+.contact h2 {
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column; /* განსაზღვრავს ფორმას ვერტიკალურად */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* გამჭვირვალე ფონი */
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact form .input-box input,
+.contact form .input-box textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    margin: 1rem 0;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.contact form .input-box input:focus,
+.contact form .input-box textarea:focus {
+    outline: none;
+    border-color: var(--highlight-color); /* ტექსტის თვალში სილამაზის ხაზის შექმნა */
+    box-shadow: 0 0 5px var(--highlight-color); /* ფოკუსზე ჩრდილი */
+}
+
+.contact-form .btn {
+    margin-top: 2rem;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--second-bg-color);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--main-color);
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.contact form .btn,
+.contact form textarea {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    margin: 1.5rem 0;
+    resize: none;
+    box-sizing: border-box; /* ეს მას გადააქცევს ელემენტს, რომ padding და border არ გადალახავდეს ელემენტის სიგანეს */
+}
+
+
+@media(max-width:1285px){
+    html{
+        font-size: 55%;
+    }
+    .services-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+}
+
+
+@media(max-width:991px){
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left:37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+    .services{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact form{
+        flex-direction: column;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+
+@media(max-width:895px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: black;
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius:2rem;
+        border-left: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar .active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 8rem;
+        margin: 3rem;
+    }
+
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .services{
+        grid-template-columns: repeat(1.1fr);
+    }
+}
+
+
+
+input[type="submit"] {
+    background-color: var(--main-color); /* ლურჯი ფონი */
+    color: white; /* თეთრი ტექსტი */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:0.3s ease;
+}
+.text-animation span {
+    display: inline-block;
+    font-family: monospace;
+    font-weight: bold;
+    position: relative;
+    width: calc(100% + 8px);
+    height: 100%;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+#menu-icon {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+
+
+
+.skills {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 5rem;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skills ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--main-color);
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.skills ul li:hover {
+    transform: scale(1.1);
+    background: var(--main-color);
+    color: black;
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+/* აიქონისთვის შავი ფერი hover-ზე */
+.skills ul li:hover i {
+    color: black;
+}
+
+
+
+.certifications {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.certifications h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 5rem;
+}
+
+.certifications ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.certifications ul li {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--main-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.certifications ul li img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.certifications ul li:hover {
+    transform: scale(1.1);
+    background: var(--main-color);
+    color: black;
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.certifications ul li:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+
+
+.projects {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 3rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-box {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.project-box h4 {
+    font-size: 2rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.project-box p {
+    color: #ddd;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-box a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: black;
+    background: var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+.project-box a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+
+.blog {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.blog p {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-bottom: 2.5rem;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--main-color);
+    max-width: 400px;
+    transition: 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.blog-card h3 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    text-shadow: 0 0 5px var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.blog-card p {
+    font-size: 1.6rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.blog-card .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background: var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.blog-card .btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+
+
+.about {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 8rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 2rem;
+    color: #ddd;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.about p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+
+.service-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.service-box:hover .service-icon {
+    color: var(--main-color);
+}
+
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.6rem;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    transition: background 0.3s ease;
+}
+
+.skills-list li i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.skills-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+.light-theme {
+    --bg-color: #f4f4f4;
+    --second-bg-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #0077ff;
+}
+.theme-toggle {
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: var(--main-color);
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: 0.3s ease;
+}
+
+
+.theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* LIGHT MODE სტილები education-სთვის */
+body.light-theme .education,
+body.light-theme .education h2,
+body.light-theme .education .timeline-date,
+body.light-theme .education .timeline-content h3,
+body.light-theme .education .timeline-content p {
+    color: black;
+}
+
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+.light-theme {
+    --bg-color: #f4f4f4;
+    --second-bg-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #0077ff;
+}
+
+/* Header და ლოგო განლაგება */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Toggle ღილაკი */
+.theme-toggle {
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: var(--main-color);
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: 0.3s ease;
+}
+.theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* Burger icon */
+#menu-icon {
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: block;
+    z-index: 101;
+}
+
+/* FULLSCREEN NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 99;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.navbar.active {
+    transform: translateY(0);
+}
+
+.navbar a {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Desktop მოდისთვის */
+@media (min-width: 769px) {
+    #menu-icon {
+        display: none;
+    }
+
+    .navbar {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+        backdrop-filter: none;
+        transform: none !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 4rem;
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+        margin-left: 2rem;
+        padding: 0;
+    }
+}
+
+/* Light mode განათლებისთვის */
+body.light-theme .education,
+body.light-theme .services h2,
+
+body.light-theme .education h2,
+body.light-theme .education .timeline-date,
+body.light-theme .education .timeline-content h3,
+body.light-theme .education .timeline-content p,
+body.light-theme .blog p
+{
+    color: black;
+}
